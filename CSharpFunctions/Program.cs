@@ -9,6 +9,10 @@ int sum = sommaElementiArray(lista);
 
 Console.WriteLine("La somma di tutti i numeri è: " + sum);
 
+int sumAlQuadrato = sommaElementiArray(elevaArrayAlQuadrato(lista));
+
+Console.WriteLine("La somma di tutti i numeri elevati al quadarto è: " + sumAlQuadrato);
+
 
 
 //----- dichiarazioni di funzioni -----
@@ -27,7 +31,7 @@ void stampaArray(int[] array) //stampa a video
 int quadrato(int numero)
 {
     int risultato;
-    risultato = numero ^ 2;
+    risultato = (int)Math.Pow(numero, 2);
     return risultato;
 }
 
