@@ -31,7 +31,7 @@ void stampaArray(int[] array) //stampa a video
 int quadrato(int numero)
 {
     int risultato;
-    risultato = (int)Math.Pow(numero, 2);
+    risultato = numero * numero;
     return risultato;
 }
 
